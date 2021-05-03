@@ -1,4 +1,4 @@
-# SpicyKetchup
+# Spicy Ketchup Testing
 A compilation of programs to teach younger members of the robotics team.
 
 Hello there! I see you've found our lovely little repository.
