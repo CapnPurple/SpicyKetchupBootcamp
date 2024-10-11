@@ -30,7 +30,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
 TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
-package org.firstinspires.ftc.robotcontroller.external.samples;
+package Testing;
 
 import com.qualcomm.hardware.limelightvision.LLResult;
 import com.qualcomm.hardware.limelightvision.LLResultTypes;
@@ -141,9 +141,9 @@ public class SensorLimelight3A extends LinearOpMode {
             telemetry.update();
 
             if (TARGET = "name or target") {
-            intakeServo = setPosition (shortSide);
+            intakePositionServo = setPosition (shortSide);
             } else if {TARGET = "other name"){
-            intakeServo = setPosition (longSide);
+            intakePositionServo = setPosition (longSide);
             } else {
             intakePositionServo = setPosition (away);
             }

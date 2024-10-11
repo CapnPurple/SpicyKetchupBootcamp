@@ -57,10 +57,14 @@ public class TestMap
     public DcMotor  rightDrive  = null;
     public DcMotor  leftArm     = null;
     public Servo    rightClaw   = null;
+    public Servo    intakePositionServo = null;
 
     public static final double MID_SERVO       =  0.5 ;
     public static final double ARM_UP_POWER    =  0.45 ;
     public static final double ARM_DOWN_POWER  = -0.45 ;
+    public static final double shortSideGrab   = 0.0;
+    public static final double longSideGrab    = 1.0;
+    public static final double away            = 0.5;
 
     /* local OpMode members. */
     HardwareMap hwMap           =  null;
@@ -97,6 +101,8 @@ public class TestMap
         // Define and initialize ALL installed servos.
         rightClaw = hwMap.get(Servo.class, "right_hand");
         rightClaw.setPosition(MID_SERVO);
+        intakePositionServo = hwMap.get(Servo.class, "intake_pos")
+        intakePositionServo.setPosition(away);
     }
 }
 
